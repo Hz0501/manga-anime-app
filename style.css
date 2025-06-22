@@ -112,4 +112,82 @@ footer {
   text-align: center;
 }
 
+/*githubリンク*/
+.about-contact a{
+  color:  #333;
+}
+
+/*サービス*/
+/* Service セクションのデザイン */
+#service {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.service-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 14px;
+  background-color: #6e6e6e;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.service-links a:hover {
+  background-color: #4b4b4b;
+}
+
+/* 使用スキルのリスト */
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 15px 0;
+  gap: 8px;
+}
+
+.tech-list li {
+  background-color: #e5e7eb;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #333;
+}
 
