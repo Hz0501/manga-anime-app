@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Manga & Anime Log</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>マンガ・アニメログ</h1>
+
+  <form id="entry-form">
+  <input type="text" id="title" placeholder="タイトル" required />
+  <select id="type">
+    <option value="マンガ">マンガ</option>
+    <option value="アニメ">アニメ</option>
+  </select>
+  <select id="rating">
+    <option value="1">★☆☆☆☆</option>
+    <option value="2">★★☆☆☆</option>
+    <option value="3">★★★☆☆</option>
+    <option value="4">★★★★☆</option>
+    <option value="5">★★★★★</option>
+  </select>
+  <input type="text" id="episode" placeholder="何話まで見たか" />
+  <input type="text" id="image" placeholder="画像URL（任意）" />
+  <textarea id="comment" placeholder="感想・メモ"></textarea>
+  <button type="submit">登録</button>
+  
+  <label for="sort">並び替え：</label>
+<select id="sort">
+  <option value="default">登録順</option>
+  <option value="rating">評価順</option>
+  <option value="favorite">お気に入り順</option>
+
+
+</select>
+
+</form>
+
+
+  <div id="entry-list" class="card-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

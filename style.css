@@ -1,0 +1,115 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content:right;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  margin-top: 40px;
+}
+
+.header-item{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header-item a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/*アバウト→経歴*/
+.about-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-info strong {
+  min-width: 1em; /* ラベル幅を固定（必要に応じて調整） */
+  flex-shrink: 0;
+}
+
+.about-info br {
+  display: none;
+}
+
+
+
+/*趣味*/
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;   /* 横幅を調整（任意） */
+  aspect-ratio: 4 / 5; /* ← 縦長の比率に設定（例：幅400pxなら高さ500px） */
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+}
+.hobby-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* モバイル対応のために折り返し可能に */
+  margin-top: 20px;
+}
+
+.hobby-item {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+
